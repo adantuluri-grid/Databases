@@ -32,7 +32,7 @@ You can now connect via localhost using your database client with the credential
 
 ### Management Commands:
 
-    Stop Containers - docker-compose stop
-    Remove Containers - docker-compose down
-    Wipe Data & Reset - docker-compose down -v
-    View Logs - docker-compose logs -f
+       Stop Containers - docker-compose stop
+       Remove Containers - docker-compose down
+       Wipe Data & Reset - docker-compose down -v
+       View Logs - docker-compose logs -f
