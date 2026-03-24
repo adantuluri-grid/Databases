@@ -4,7 +4,7 @@ This submodule provides a Docker Compose manifest to spin up a local PostgreSQL 
 
 ### Prerequisites
 
-1. Docker installed.
+1. Docker installed
 2. Docker & Docker Compose installed.
 3. A database GUI (e.g., DBeaver, TablePlus, or pgAdmin).
 
