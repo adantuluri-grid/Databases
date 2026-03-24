@@ -13,12 +13,12 @@ This submodule provides a Docker Compose manifest to spin up a local PostgreSQL 
 1. Configure Environment Variables.
 2. Create a .env file in the root of this submodule and define your custom credentials:
 
-        POSTGRES_DB=mydatabase
-        POSTGRES_USER=myuser
-        POSTGRES_PASSWORD=mypassword
-        DB_PORT=5433
-        DB_CONTAINER_PORT=5432
-        DB_VOLUME=postgres_data
+        POSTGRES_DB = mydatabase
+        POSTGRES_USER = myuser
+        POSTGRES_PASSWORD = mypassword
+        DB_PORT = 5433
+        DB_CONTAINER_PORT = 5432
+        DB_VOLUME = postgres_data
 
 3. Launch the Container. Run the following command to start the database in detached mode:
 
