@@ -4,13 +4,13 @@ This submodule provides a Docker Compose manifest to spin up a local PostgreSQL 
 
 ### Prerequisites
 
-1. Docker installed
+1. Docker installed.
 2. Docker & Docker Compose installed.
 3. A database GUI (e.g., DBeaver, TablePlus, or pgAdmin).
 
 ### Getting Started
 
-1. Configure Environment Variables
+1. Configure Environment Variables.
 2. Create a .env file in the root of this submodule and define your custom credentials:
 
         POSTGRES_DB=mydatabase
