@@ -2,7 +2,7 @@
 services:
   database:
     image: postgres:18
-    container_name: local_postgres_db
+    container_name: concentra-db
     restart: unless-stopped
 
     env_file:
@@ -19,6 +19,8 @@ services:
 
     volumes:
       - ${DB_VOLUME}:/var/lib/postgresql/data
+      - ./docker/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+
 
 volumes:
   postgres_data:
