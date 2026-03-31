@@ -1,4 +1,5 @@
-## Running the Database
+## Database Schema
+### Running the Database
 
 Start the PostgreSQL container:
 
@@ -17,3 +18,7 @@ The script uses CREATE TABLE IF NOT EXISTS, so restarting the container will not
     Database: concentra
     User: admin
     Password: admin
+
+### Entities relationship diagram
+
+![img.png](img.png)
