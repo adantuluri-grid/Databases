@@ -3,7 +3,9 @@
 
 Start the PostgreSQL container:
 
+```bash
 docker-compose up -d
+```
 
 The database schema is automatically initialized using:
 
