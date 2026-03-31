@@ -22,3 +22,17 @@ The script uses CREATE TABLE IF NOT EXISTS, so restarting the container will not
 ### Entities relationship diagram
 
 ![img.png](img.png)
+
+The schema includes all required relationship types:
+
+#### One-to-One
+- `node` ↔ `state_machine`
+    - Each node has exactly one state machine
+
+#### One-to-Many
+- `node` → `log_entry`
+    - One node can have multiple log entries
+
+#### Many-to-Many
+- `node` ↔ `cluster` (via `node_cluster`)
+    - A node can belong to multiple clusters and vice versa
