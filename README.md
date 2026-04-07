@@ -48,9 +48,13 @@
 
 ### Example Query
 ```
-    SELECT l.id, l.command, n.node_name
-    FROM logs l
-    JOIN nodes n ON l.node_id = n.id; 
+    SELECT n.node_name,
+      COUNT(l.id) AS log_count
+    FROM nodes n
+      JOIN logs l ON n.id = l.node_id
+    GROUP BY n.node_name
+    ORDER BY log_count DESC
+      LIMIT 1;
 ```
 
 ### Reset Database
