@@ -34,7 +34,6 @@ public class SingleConnectionDataSource implements DataSource {
         throw new UnsupportedOperationException();
     }
 
-    // --- Below methods required by interface but not used ---
 
     @Override
     public <T> T unwrap(Class<T> iface) {

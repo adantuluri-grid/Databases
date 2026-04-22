@@ -11,17 +11,14 @@ public class MultithreadedTest {
 
     public static void main(String[] args) throws Exception {
 
-        // 🔁 SWITCH HERE to compare
 
-        // --- Option 1: Single connection ---
         DataSource ds = new SingleConnectionDataSource(
                 "jdbc:postgresql://localhost:5475/consentrajdbc",
                 "admin",
                 "admin"
         );
 
-        // --- Option 2: HikariCP ---
-        // DataSource ds = HikariDataSourceProvider.create();
+
 
         DatabaseUtil db = new DatabaseUtil(ds);
 
