@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: jdbc-rdbms-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: jdbc_rdbms
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5485:5432"
